@@ -1,0 +1,67 @@
+# Project Overview
+
+## Cocktail Generator
+
+The name of your project with deployed URL.
+
+## Project Description
+
+Website that allows users to search random cocktails and get an image with the ingredients for a different cocktail each time they search. 
+
+## API and Data Sample
+
+The Cocktail DB
+www.thecocktaildb.com/api/json/v1/1/random.php
+
+## Wireframes
+
+Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+
+#### MVP 
+
+- Find and use external api 
+- Render data on page 
+
+#### PostMVP  
+
+- N/A
+
+## Project Schedule
+
+|June 21|                Prompt / Wireframes / Priority Matrix / Timeframes               | Incomplete
+|June 22|                 Project Approval / Core App Structure (HTML CSS)                | Incomplete
+|June 23|                         javascript / API integration                            | Incomplete
+|June 24| Fine tuning (verify everything is operational and clean up webpage appearance)  | Incomplete
+|June 25|                 Work on any issues or blockers and final testing                | Incomplete
+|June 28|                                Presentations                                    | Incomplete 
+
+## Priority Matrix
+
+Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
+## Timeframes
+
+|   Date    |    Component     | Priority | Estimated Time | Time Invested | Actual Time |
+
+|  June 21  | Project Proposal |   High   |      8hrs      |   (invested)  |   (actual)  |
+|  June 22  | HTML             |   High   |      4hrs      |   (invested)  |   (actual)  |
+|  June 22  | CSS              |   High   |      4hrs      |   (invested)  |   (actual)  |
+|  June 23  | Javascript       |   High   |      4hrs      |   (invested)  |   (actual)  |
+|  June 23  | API integration  |   High   |      4hrs      |   (invested)  |   (actual)  |
+|  June 24  | Fine tuning      |   High   |      8hrs      |   (invested)  |   (actual)  |
+|  June 25  | Blockers         |   High   |      8hrs      |   (invested)  |   (actual)  |
+
+|  June 28  |     Total        |   High   |      6hrs      |      5hrs     |     5hrs    |
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
+
+## Change Log
+ Use this section to document what changes were made and the reasoning behind those changes.  
