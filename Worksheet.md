@@ -1,8 +1,8 @@
 # Project Overview
 
-## Cocktail Generator
+## Cocktails Connoisseur 
 
-The name of your project with deployed URL.
+www.cocktailscns.com
 
 ## Project Description
 
