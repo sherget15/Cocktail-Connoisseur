@@ -79,15 +79,13 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 
 #### MVP 
 
-- Framework
-- Axios link 
-- Append API images & data
-- Search bar and Button
-- Page styling 
+- Event listener for random cocktail recipes 
+- Append API images, ingredients, and instructions
+- Removal of previous api call data (ingredients, instructions, etc) 
 
 #### PostMVP  
 
-- N/A
+- Add search bar & text input to search by ingredient
 
 ## Project Schedule
 
