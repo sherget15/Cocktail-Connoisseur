@@ -2,7 +2,7 @@
 
 ## Cocktails Connoisseur 
 
-www.cocktailscns.com
+www.cocktailcns.com
 
 ## Project Description
 
@@ -79,8 +79,9 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 
 #### MVP 
 
-- Framework 
-- Find and use external api 
+- Framework
+- Axios link 
+- Append API images & data
 - Search bar and Button
 - Page styling 
 
