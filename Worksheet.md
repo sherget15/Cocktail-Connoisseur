@@ -13,6 +13,7 @@ Website that allows users to search random cocktails and get an image with the i
 The Cocktail DB
 www.thecocktaildb.com/api/json/v1/1/random.php
 
+```
 {
     "drinks": [
         {
@@ -70,12 +71,11 @@ www.thecocktaildb.com/api/json/v1/1/random.php
         }
     ]
 }
+```
 
 ## Wireframes
 
 <img width="353" alt="LWL wireframe" src="https://user-images.githubusercontent.com/82413689/122941528-77233e00-d343-11eb-87b1-beb92c54b672.png">
-
-<img width="353" alt="LWL wireframe" src="https://user-images.githubusercontent.com/82413689/122938385-b56b2e00-d340-11eb-954d-a1b4e40be9c5.png">
 
 #### MVP 
 
