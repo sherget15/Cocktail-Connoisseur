@@ -90,6 +90,8 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 
 ## Project Schedule
 
+| Date  | Project Tasks                                                                   |Task Status |
+|-------|---------------------------------------------------------------------------------|------------|
 |June 21| Prompt / Wireframes / Priority Matrix / Timeframes                              | Incomplete |
 |June 22| Project Approval / Core App Structure (HTML CSS)                                | Incomplete |
 |June 23| Javascript / API integration                                                    | Incomplete |
@@ -103,8 +105,9 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 
 ## Timeframes
 
-|   Date    |    Component     | Priority | Estimated Time | Time Invested | Actual Time |
 
+|   Date    |    Component     | Priority | Estimated Time | Time Invested | Actual Time |
+|-----------|------------------|----------|----------------|---------------|-------------|
 |  June 21  | Project Proposal |   High   |      8hrs      |   (invested)  |   (actual)  |
 |  June 22  | HTML             |   High   |      4hrs      |   (invested)  |   (actual)  |
 |  June 22  | CSS              |   High   |      4hrs      |   (invested)  |   (actual)  |
@@ -112,10 +115,7 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 |  June 23  | API integration  |   High   |      4hrs      |   (invested)  |   (actual)  |
 |  June 24  | Fine tuning      |   High   |      8hrs      |   (invested)  |   (actual)  |
 |  June 25  | Blockers         |   High   |      8hrs      |   (invested)  |   (actual)  |
-
 |  June 28  |     Total        |   High   |      6hrs      |      5hrs     |     5hrs    |
-
-
 
 ## Code Snippet
 
