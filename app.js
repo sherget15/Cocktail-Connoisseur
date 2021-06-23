@@ -45,19 +45,16 @@ async function getData() {
       drinkList.append(strIngredient4)
     }
     return response
-  } catch (error) {
+  }
+  catch (error) {
     console.error(error)
   }
 }
-getData()
 
 button.addEventListener('click', event => {
-  // let mixer = document.querySelector('button').value
-  // console.log(mixer)
   event.preventDefault()
   removeDrink()
   getData()
-  console.log(getData)
 })
 
 function removeDrink() {
