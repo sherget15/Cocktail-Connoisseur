@@ -52,12 +52,6 @@ button {
   footer {order: 3;}
 }
 
-@media all and (min-width: 600px) {
-  .aside { 
-    flex: 0;
-  }
-}
-
 @media all and (min-width: 800px) {
   .center { flex: 5; }
 }
