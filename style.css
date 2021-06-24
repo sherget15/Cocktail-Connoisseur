@@ -1,0 +1,207 @@
+* {
+  viewport-fit: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.main > * {
+  padding: 10px;
+}
+
+header {
+  height: 100px;
+  background-image: url('https://i.imgur.com/6hoFtkA.jpg');
+  background-size: 20%;
+}
+
+footer {
+  height: 100px;
+  background-image: url('https://i.imgur.com/67OJB1r.jpg');
+  background-size: 20%;
+}
+
+.center {
+  flex: 4 0 0;
+  text-align: center;
+}
+
+button {
+  
+  border-radius: 10%;
+  border-color: darkblue;
+  text-decoration-color: darkblue;
+  background-color: hotpink;
+  margin: 10px;
+}
+
+.menu {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+}
+
+@media all and (min-width: 800px) {
+  .main {flex: 4 0px;}
+  header {order: 1;}
+  .main {order: 2;}
+  footer {order: 3;}
+}
+
+@media all and (min-width: 600px) {
+  .aside { 
+    flex: 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .center { flex: 5; }
+}
+
+body {
+  padding: 2em; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OPTION 2 */
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url('https://i.imgur.com/6hoFtkA.jpg');
+  background-size: 20%;
+  flex: 0 150px;
+}
+
+footer {
+  background-image: url('https://i.imgur.com/67OJB1r.jpg');
+  background-size: 20%;
+  flex: 0 150px;
+}
+
+main {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+  order: 2;
+  flex: 3;
+} 
+
+aside {
+  flex: 0 300px;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 3;
+}
+
+@media screen and (max-width: 1025px) {
+  main {
+      flex-direction: c;
+  }
+
+  /* .center {
+      order: 0;
+  } */
+
+  /* aside {
+      flex: 0;
+  }
+} */ */
+
+
+
+
+/* OPTION 1 */
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  display: flex;
+  flex: 0 150px;
+  background-image: url('https://i.imgur.com/6hoFtkA.jpg');
+  background-size: 20%;
+}
+
+footer {
+  display: flex;
+  flex: 0 150px;
+  background-image: url('https://i.imgur.com/67OJB1r.jpg');
+  background-size: 20%;
+}
+
+.center {
+  display: flex;
+  flex: 0;
+  justify-content: space-around center;
+
+
+}
+
+.instructions {
+  flex: 1;
+  order: 0;
+}
+
+aside {
+  flex: 0 300px;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 3;
+}
+
+@media screen and (max-width: 1025px) {
+  .center {
+      flex-direction: column;
+  }
+
+
+  .instructions {
+      order: 0;
+      text-align: center;
+  }
+
+  .miu {
+    order: 1;
+   
+  }
+
+  aside {
+      flex: 0;
+  }
+} */

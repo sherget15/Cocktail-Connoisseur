@@ -19,28 +19,28 @@ async function getData() {
       drinkList.append(strDrinkThumb)
 
 
-      const strDrinks = document.createElement('h3')
+      const strDrinks = document.createElement('h2')
       strDrinks.textContent = `${renderList[i].strDrink}`
       drinkList.append(strDrinks)
       console.log(strDrinks)
 
-      const strGlass = document.createElement('h5')
+      const strGlass = document.createElement('h3')
       strGlass.textContent = `${renderList[i].strGlass}`
       drinkList.append(strGlass)
 
-      const strIngredient1 = document.createElement('h6')
+      const strIngredient1 = document.createElement('h4')
       strIngredient1.textContent = `${renderList[i].strMeasure1}` + ' - ' + `${renderList[i].strIngredient1}`
       drinkList.append(strIngredient1)
 
-      const strIngredient2 = document.createElement('h6')
+      const strIngredient2 = document.createElement('h4')
       strIngredient2.textContent = `${renderList[i].strMeasure2}` + ' - ' + `${renderList[i].strIngredient2}`
       drinkList.append(strIngredient2)
 
-      const strIngredient3 = document.createElement('h6')
+      const strIngredient3 = document.createElement('h4')
       strIngredient3.textContent = `${renderList[i].strMeasure3}` + ' - ' + `${renderList[i].strIngredient3}`
       drinkList.append(strIngredient3)
 
-      const strIngredient4 = document.createElement('h6')
+      const strIngredient4 = document.createElement('h4')
       strIngredient4.textContent = `${renderList[i].strMeasure4}` + ' - ' + `${renderList[i].strIngredient4}`
       drinkList.append(strIngredient4)
     }
