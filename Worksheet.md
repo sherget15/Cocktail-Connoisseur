@@ -1,5 +1,7 @@
 # Project Overview
 
+Site that provides a randomized search function which returns all info from an API database needed to create the cocktail displayed each time the search button is pressed. 
+
 ## Cocktails Connoisseur 
 
 www.cocktailcns.com
@@ -104,27 +106,38 @@ www.thecocktaildb.com/api/json/v1/1/random.php
 
 ## Timeframes
 
-
 |   Date    |    Component     | Priority | Estimated Time | Time Invested | Actual Time |
 |-----------|------------------|----------|----------------|---------------|-------------|
-|  June 21  | Project Proposal |   High   |      8hrs      |   (invested)  |   (actual)  |
-|  June 22  | HTML             |   High   |      4hrs      |   (invested)  |   (actual)  |
-|  June 22  | CSS              |   High   |      4hrs      |   (invested)  |   (actual)  |
-|  June 23  | Javascript       |   High   |      4hrs      |   (invested)  |   (actual)  |
-|  June 23  | API integration  |   High   |      4hrs      |   (invested)  |   (actual)  |
-|  June 24  | Fine tuning      |   High   |      8hrs      |   (invested)  |   (actual)  |
-|  June 25  | Blockers         |   High   |      8hrs      |   (invested)  |   (actual)  |
-|  June 28  |     Total        |   High   |      6hrs      |      5hrs     |     5hrs    |
+|  June 21  | Project Proposal |   High   |      8hrs      |   8hrs        |   8hrs      |
+|  June 22  | HTML             |   High   |      4hrs      |   2hrs        |   2hrs      |
+|  June 22  | CSS              |   High   |      4hrs      |   6hrs        |   6hrs      |
+|  June 23  | Javascript       |   High   |      4hrs      |   4hrs        |   4hrs      |
+|  June 23  | API integration  |   High   |      4hrs      |   4hrs        |   4hrs      |
+|  June 24  | Fine tuning      |   High   |      8hrs      |   8hrs        |   8hrs      |
+|  June 25  | Blockers         |   High   |      8hrs      |   4hrs        |   4hrs      |
+|  June 28  |     Total        |   High   |     40hrs      |  36hrs        |  36hrs      |
 
 ## Code Snippet
 
+```
+//appending first four ingredients w/ quantity in same string
+      const strIngredient1 = document.createElement('h4')
+      strIngredient1.textContent = `${renderList[i].strMeasure1}` + ' - ' + `${renderList[i].strIngredient1}`
+      drinkList.append(strIngredient1)
 
+      const strIngredient2 = document.createElement('h4')
+      strIngredient2.textContent = `${renderList[i].strMeasure2}` + ' - ' + `${renderList[i].strIngredient2}`
+      drinkList.append(strIngredient2)
+
+      const strIngredient3 = document.createElement('h4')
+      strIngredient3.textContent = `${renderList[i].strMeasure3}` + ' - ' + `${renderList[i].strIngredient3}`
+      drinkList.append(strIngredient3)
+
+      const strIngredient4 = document.createElement('h4')
+      strIngredient4.textContent = `${renderList[i].strMeasure4}` + ' - ' + `${renderList[i].strIngredient4}`
+      drinkList.append(strIngredient4)
+      ```
 
 ## Change Log
 
-
-
-
-
-
-
+No significant changes made.
