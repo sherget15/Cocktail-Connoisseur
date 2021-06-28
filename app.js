@@ -8,26 +8,30 @@ async function getData() {
     console.log(renderList)
     for (i = 0; i < renderList.length; i++) {
 
+      //creating new div to append to
       const drinkComps = document.createElement('div')
       drinkList.append(drinkComps)
       console.log(drinkComps)
 
+      //appending drink image to div
       const strDrinkThumb = document.createElement('img')
       strDrinkThumb.setAttribute('src', renderList[i].strDrinkThumb)
       strDrinkThumb.style.width = '200px'
       strDrinkThumb.style.height = 'auto'
       drinkList.append(strDrinkThumb)
 
-
+      //appending drink name
       const strDrinks = document.createElement('h2')
       strDrinks.textContent = `${renderList[i].strDrink}`
       drinkList.append(strDrinks)
       console.log(strDrinks)
 
+      //appending glass type to use for drink
       const strGlass = document.createElement('h3')
       strGlass.textContent = `${renderList[i].strGlass}`
       drinkList.append(strGlass)
 
+      //appending first four ingredients w/ quantity in same string
       const strIngredient1 = document.createElement('h4')
       strIngredient1.textContent = `${renderList[i].strMeasure1}` + ' - ' + `${renderList[i].strIngredient1}`
       drinkList.append(strIngredient1)
