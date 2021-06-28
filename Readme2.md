@@ -4,7 +4,7 @@ Site that provides a randomized search function which returns all info from an A
 
 ## Cocktails Connoisseur 
 
-www.cocktailcns.com
+https://sherget15.github.io/Cocktail-Connoisseur/
 
 ## Project Description
 
