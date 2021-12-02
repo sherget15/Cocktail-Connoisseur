@@ -13,6 +13,8 @@ async function getData() {
       drinkList.append(drinkComps)
       console.log(drinkComps)
 
+      //drinkComps -> Comps = Components
+
       //appending drink image to div
       const strDrinkThumb = document.createElement('img')
       strDrinkThumb.setAttribute('src', renderList[i].strDrinkThumb)
