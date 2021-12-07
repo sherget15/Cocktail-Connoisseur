@@ -20,16 +20,18 @@ body {
 
 header {
   height: 100px;
-  /* background-image: url('https://i.imgur.com/6hoFtkA.jpg'); */
   background-color: rgb(3, 3, 53);
-  background-size: 20%;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 1px;
 }
 
 footer {
   height: 100px;
-  /* background-image: url('https://i.imgur.com/67OJB1r.jpg'); */
   background-color: rgb(3, 3, 53);
-  background-size: 20%;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 1px;
 }
 
 .instructions {
