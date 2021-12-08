@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  padding-top: 60px;
+  padding-bottom: 40px;
  }  
 
 .main {
@@ -8,26 +10,53 @@ body {
   min-height: 100vh;
   text-align: center;
   text-decoration-color: hotpink;
+  background-image: url('https://i.imgur.com/PVuExJV.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .main > * {
-  padding: 10px;
+  padding: 200px;
 }
 
 header {
+  width: 100vw;
+  position: fixed;
   height: 100px;
   background-color: rgb(3, 3, 53);
-  outline-style: solid;
-  outline-color: white;
-  outline-width: 1px;
+  color: white;
+  outline: 1px solid;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+
+.headerbox {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  color: white;
+  text-decoration-color: white;
 }
 
 footer {
+  width: 100%;
+  position: fixed;
   height: 100px;
   background-color: rgb(3, 3, 53);
   outline-style: solid;
   outline-color: white;
   outline-width: 1px;
+  bottom: 0;
+  left: 0;
 }
 
 .instructions {
@@ -38,7 +67,7 @@ footer {
 .center {
   flex: 4 0 0;
   text-align: center;
-  text-decoration-color: hotpink;
+  color: hotpink;
 }
 
 button {
