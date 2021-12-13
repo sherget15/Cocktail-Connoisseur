@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <header>
 
+  <header>
     <div class="headerbox">
       <h4>Cocktail Connoisseur</h4>
       <nav>
@@ -22,28 +22,38 @@
         <a href="#">Contact Us</a>
       </nav>
     </div>
-
   </header>
 
   <div class="main">
-    <div class="center">
 
-      <div class="miu">
-        <button>Mix It Up</button>
-      </div>
+    <!-- <div class="bg">
+      <img src="https://i.imgur.com/PVuExJV.jpg" alt="">
+    </div> -->
 
-      <div class="instructions">
-        <h4>
-          Click the button to start 
-          mixing it up with some fun 
-          new cocktails🍸!
-        </h4>
-      </div>
+    <section class="input-area">
+        <div class="miu">
+          <form id="ingredient-form">
+            <p><input type="text" placeholder="ingredient" id="ingredient-box">
+            <button>Mix It Up</button>Click the button to start mixing it up with some fun new cocktails🍸!</p>
+          </form>
+          <form id="checkbox-form">
+            <p><input type="checkbox" name="non-alc" id="non-alc">Non-Alcoholic</p>
+          </form>
+        </div>
+        
+        <!-- <div class="instructions">
+          <h4>
+            Click the button to start 
+            mixing it up with some fun 
+            new cocktails🍸!
+          </h4>
+        </div> -->
+    </section>
+      
+    <div class="menu"></div>
 
-      <div class="menu"></div>
-
-    </div>
   </div>
+
   <footer>
   </footer>
 </body>
