@@ -67,6 +67,13 @@ footer {
   left: 0;
 }
 
+.input-area {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .instructions {
   color: white;
   text-decoration-color: white;
@@ -90,6 +97,7 @@ button {
   margin-top: 50px;
   margin-bottom: 50px;
   height: 400px;
+  color: white;
 }
 
 p {
