@@ -104,7 +104,7 @@ function drinkLoop (response) {
     //Drink name based off id Drink
     const drinkName = document.createElement('div')
     drinkDiv.setAttribute('class', 'drink-container')
-    const backGround = 'url(${drinkData[i].strDrinkThumb})'
+    const backGround = `url(${drinkData[i].strDrinkThumb})`
     drinkDiv.style.backgroundImage = backGround
     drinkDiv.setAttribute('id', drinkData[i].idDrink)
     drinkName.setAttribute('style', 'background: #20201d; color: #fff; padding: 5px; opacity: 0.85;')
@@ -117,13 +117,16 @@ function drinkLoop (response) {
 
 button.addEventListener('click', (e => {
   e.preventDefault()
-  //Removes results from previous searches
+
+  //Remove results from previous searches
   removeResults(drinkList)
   const ingredient = document.querySelector('#ingredient-box').value
+
   //Retrieves drink id and image for background
   grabDrinks(ingredient)
   // backgroundChange(ingredient)
-  //Resets ingredient search input
+
+  //Reset ingredient search input
   document.querySelector('#ingredient-box').value = ''
 }))
 
