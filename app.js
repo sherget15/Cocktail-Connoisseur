@@ -93,7 +93,7 @@ const grabDrinks = async (ingredient) => {
   }
 }
 
-// Populate drink array and creates div containers for each drink
+// Populate drink array and create div containers for each drink
 function drinkLoop (response) {
   const drinkData = response.data.drinks
   for (let i=0; i < drinkData.length; i++) {
@@ -104,13 +104,17 @@ function drinkLoop (response) {
     //Drink name based off id Drink
     const drinkName = document.createElement('div')
     drinkDiv.setAttribute('class', 'drink-container')
-    const backGround = `url(${drinkData[i].strDrinkThumb})`
-    drinkDiv.style.backgroundImage = backGround
+
+    const strDrinkThumb = document.createElement('img')
+    strDrinkThumb.setAttribute('src', drinkData[i].strDrinkThumb)
+    strDrinkThumb.style.width = '200px'
+    strDrinkThumb.style.height = 'auto'
     drinkDiv.setAttribute('id', drinkData[i].idDrink)
     drinkName.setAttribute('style', 'background: #20201d; color: #fff; padding: 5px; opacity: 0.85;')
     drinkName.innerText = drinkData[i].strDrink
     drinkList.appendChild(drinkDiv)
     drinkDiv.appendChild(drinkName)
+    drinkDiv.append(strDrinkThumb)
     grabDrinkData(drinkData[i].idDrink)
   }
 }
@@ -150,17 +154,23 @@ const grabDrinkData = async (drinkID) => {
     let stringIngredient = arrayIngredient.toString().replaceAll(',',' ').trim()
     const id = drinkData.idDrink
 
-    //Get the div that already contains the drinkName to append instructions & ingredients
+    //Get the div that already contains the drinkName to append instructions, ingredients, & picture 
     const drinkDiv = document.getElementById(id)
     const drinkIngInstr = document.createElement('div')
+    const drinkPic = document.createElement('div')
+    const strDrinkThumb = document.createElement('img')
     const drinkIngredients = document.createElement('div')
     const drinkInstructions = document.createElement('div')
 
     //Set the ingredients & instructions to this container to allow hover pseudo-class 
     drinkIngInstr.setAttribute('class', `container`)
     drinkDiv.append(drinkIngInstr)
+    strDrinkThumb.setAttribute('class', `container`)
+    drinkDiv.append(strDrinkThumb)
+    // drinkPic.setAttribute('class', `ingredient-container`)
     drinkIngredients.setAttribute('class', `ingredient-container`)
     drinkInstructions.setAttribute('class', `ingredient-container`)
+    // drinkIngInstr.append(drinkPic)
     drinkIngInstr.append(drinkIngredients)
     drinkIngInstr.append(drinkInstructions)
     drinkIngredients.innerText = stringIngredient
