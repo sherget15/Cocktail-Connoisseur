@@ -20,13 +20,14 @@ header {
   z-index: 10;
   width: 100%;
   position: fixed;
-  height: 100px;
+  height: 80px;
   background-color: rgb(11, 2, 36);
   color: white;
   outline: 1px solid;
   text-align: center;
   top: 0;
   left: 0;
+  line-height: 3px;
 }
 
 .header-title {
@@ -50,14 +51,14 @@ a {
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 footer {
   width: 100%;
   position: fixed;
-  height: 100px;
+  height: 80px;
   background-color: rgb(11, 2, 36);
   outline-style: solid;
   outline-color: white;
