@@ -104,10 +104,10 @@ function drinkLoop (response) {
   const drinkData = response.data.drinks
   for (let i=0; i < drinkData.length; i++) {
 
-    //Drink container with background of drink image
+    //Create container div
     const drinkDiv = document.createElement('div')
 
-    //Drink name based off id Drink
+    //Create and append div for drink name/title based off Drink id
     const drinkName = document.createElement('div')
     drinkDiv.setAttribute('class', 'drink-container')
 
@@ -169,7 +169,6 @@ const grabDrinkData = async (drinkID) => {
     //Get the div that already contains the drinkName to append instructions & ingredients
     const drinkDiv = document.getElementById(id)
     const drinkIngInstr = document.createElement('div')
-    const drinkPic = document.createElement('div')
     const strDrinkThumb = document.createElement('img')
     const drinkIngredients = document.createElement('div')
     const drinkInstructions = document.createElement('div')
@@ -180,7 +179,7 @@ const grabDrinkData = async (drinkID) => {
     // strDrinkThumb.setAttribute('class', `container`)
     // drinkDiv.append(strDrinkThumb)
     // drinkPic.setAttribute('class', `ingredient-container`)
-    // drinkIngredients.setAttribute('class', `ingredient-container`)
+    drinkIngredients.setAttribute('class', `ingredient-container`)
     drinkInstructions.setAttribute('class', `ingredient-container`)
 
     // const strIngredient1 = document.createElement('p')
@@ -190,7 +189,7 @@ const grabDrinkData = async (drinkID) => {
 
 
 
-    // drinkIngInstr.append(drinkIngredients)
+    drinkIngInstr.append(drinkIngredients)
     drinkIngInstr.append(drinkInstructions)
     drinkIngredients.innerText = stringIngredient
     const instructions = drinkData.strInstructions.toString()
