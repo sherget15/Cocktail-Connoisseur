@@ -3,23 +3,12 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
   margin-top: 50px;
-  /* background-image: url('https://i.imgur.com/PVuExJV.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  opacity: 0.3; */
  }  
 
 .main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* min-height: 100vh; */
-  /* background-image: url('https://i.imgur.com/PVuExJV.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; */
-  /* opacity: 1.0; */
   }
 
 header {
@@ -35,11 +24,6 @@ header {
   top: 0;
   left: 0;
 }
-
-/* .headerbox {
-  width: 80%;
-  margin: 0 auto;
-} */
 
 nav {
   width: 80%;
@@ -92,9 +76,26 @@ button {
 
 .menu {
   margin-top: 50px;
-  margin-bottom: 50px;
-  height: 400px;
+  margin-bottom: 100px;
   color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.drink-container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 60vh;
+  width: 20vw;
+  margin: 10px;
+  align-items: center;
+}
+
+.ingredient-container {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
 }
 
 p {
