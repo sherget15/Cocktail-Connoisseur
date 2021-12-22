@@ -40,6 +40,12 @@
 //       strIngredient1.textContent = `${renderList[i].strMeasure1}` + ' - ' + `${renderList[i].strIngredient1}`
 //       drinkList.append(strIngredient1)
 
+      // const strIngredient1 = document.createElement('p')
+      // strIngredient1.textContent = `${drinkData[i].strMeasure1}` + ' - ' + `${drinkData[i].strIngredient1}`
+      // drinkList.append(strIngredient1)
+
+
+
 //       const strIngredient2 = document.createElement('h4')
 //       strIngredient2.textContent = `${renderList[i].strMeasure2}` + ' - ' + `${renderList[i].strIngredient2}`
 //       drinkList.append(strIngredient2)
@@ -151,10 +157,16 @@ const grabDrinkData = async (drinkID) => {
     //Clear out null values & set array to a string
     const {strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15} = drinkData
     let arrayIngredient = [strMeasure1, strIngredient1, strMeasure2, strIngredient2, strMeasure3, strIngredient3, strMeasure4, strIngredient4, strMeasure5, strIngredient5, strMeasure6, strIngredient6, strMeasure7, strIngredient7, strIngredient8, strMeasure8, strIngredient9, strMeasure9, strIngredient10, strMeasure10, strIngredient11, strMeasure11, strMeasure12, strIngredient12, strIngredient13, strMeasure13, strMeasure14, strIngredient14, strMeasure15, strIngredient15]
-    let stringIngredient = arrayIngredient.toString().replaceAll(',',' ').trim()
+    
+    let stringIngredient = arrayIngredient.toString().replaceAll(',', ' ').trim()
     const id = drinkData.idDrink
+    
+    // const strIngredient = document.createElement('p')
+    // strIngredient1.textContent = `${drinkData[i].strMeasure1}` + ' - ' + `${drinkData[i].strIngredient1}`
+    // drinkList.append(strIngredient1)
+    
 
-    //Get the div that already contains the drinkName to append instructions, ingredients, & picture 
+    //Get the div that already contains the drinkName to append instructions & ingredients
     const drinkDiv = document.getElementById(id)
     const drinkIngInstr = document.createElement('div')
     const drinkPic = document.createElement('div')
@@ -165,13 +177,20 @@ const grabDrinkData = async (drinkID) => {
     //Set the ingredients & instructions to this container to allow hover pseudo-class 
     drinkIngInstr.setAttribute('class', `container`)
     drinkDiv.append(drinkIngInstr)
-    strDrinkThumb.setAttribute('class', `container`)
-    drinkDiv.append(strDrinkThumb)
+    // strDrinkThumb.setAttribute('class', `container`)
+    // drinkDiv.append(strDrinkThumb)
     // drinkPic.setAttribute('class', `ingredient-container`)
-    drinkIngredients.setAttribute('class', `ingredient-container`)
+    // drinkIngredients.setAttribute('class', `ingredient-container`)
     drinkInstructions.setAttribute('class', `ingredient-container`)
-    // drinkIngInstr.append(drinkPic)
-    drinkIngInstr.append(drinkIngredients)
+
+    // const strIngredient1 = document.createElement('p')
+    // strIngredient1.textContent = `${drinkData[i].strMeasure1}` + ' - ' + `${drinkData[i].strIngredient1}`
+    // drinkList.append(strIngredient1)
+
+
+
+
+    // drinkIngInstr.append(drinkIngredients)
     drinkIngInstr.append(drinkInstructions)
     drinkIngredients.innerText = stringIngredient
     const instructions = drinkData.strInstructions.toString()
