@@ -84,9 +84,10 @@ button {
 }
 
 .drink-container {
-  display: flex;
-  flex-flow: column wrap;
-  height: 60vh;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  height: 80vh;
   width: 20vw;
   margin: 10px;
   align-items: center;
