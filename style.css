@@ -96,6 +96,7 @@ button {
   display: flex;
   flex-flow: column wrap;
   padding: 5px;
+  width: 200px;
 }
 
 p {
