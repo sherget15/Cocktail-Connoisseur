@@ -116,7 +116,7 @@ function drinkLoop (response) {
     strDrinkThumb.style.width = '200px'
     strDrinkThumb.style.height = 'auto'
     drinkDiv.setAttribute('id', drinkData[i].idDrink)
-    drinkName.setAttribute('style', 'width: 200px; background: #20201d; color: #fff; padding: 5px; opacity: 0.85;')
+    drinkName.setAttribute('style', 'width: 200px; background: #20201d; color: #fff; font-size: 20px; -webkit-text-stroke: .5px hotpink; border-style: solid; border-color: white; border-width: .5px;  padding: 5px; opacity: 0.85;')
     drinkName.innerText = drinkData[i].strDrink
     drinkList.appendChild(drinkDiv)
     drinkDiv.appendChild(drinkName)

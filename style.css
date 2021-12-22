@@ -1,7 +1,9 @@
 body {
-  background-color: rgb(11, 2, 36);
+  background-color: black;
   padding-top: 60px;
   padding-bottom: 40px;
+  padding-left: 0%;
+  padding-right: 0%;
   margin-top: 50px;
  }  
 
@@ -16,8 +18,7 @@ header {
   width: 100%;
   position: fixed;
   height: 100px;
-  background-color: black;
-  /* background-color: rgb(3, 3, 53); */
+  background-color: rgb(11, 2, 36);
   color: white;
   outline: 1px solid;
   text-align: center;
@@ -39,8 +40,7 @@ footer {
   width: 100%;
   position: fixed;
   height: 100px;
-  background-color: black;
-  /* background-color: rgb(3, 3, 53); */
+  background-color: rgb(11, 2, 36);
   outline-style: solid;
   outline-color: white;
   outline-width: 1px;
@@ -91,6 +91,8 @@ button {
   width: 20vw;
   margin: 10px;
   align-items: center;
+  justify-content: center;
+  outline: 1px solid;
 }
 
 .ingredient-container {
